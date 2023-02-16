@@ -1,0 +1,31 @@
+.inner {
+    text-align: center;
+}
+
+.title {
+    font-size: 70px;
+    margin-top: 50px;
+    position: relative;
+}
+
+.body {
+    background-color: #000000;
+    position: relative;
+}
+
+.circle_parent {
+    text-align: center;
+    margin-top: 400px;
+}
+.circle {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: skyblue;
+    margin: 20px;
+}
+
+.color {
+    background-image: url("../resouces/views/posts/images/title.png");
+}
