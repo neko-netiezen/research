@@ -1,7 +1,7 @@
 <x-app-layout>
-    <x-slot name="management">
+    <x-slot name="graph">
         <h2 class="font-semibold text-x1 text-gray-800 leading-tight">
-            {{ __('Management') }}
+            {{ __('graph') }}
         </h2>
     </x-slot>
     
@@ -9,11 +9,11 @@
     <html lang="ja">
         <head>
             <meta charset="utf-8">
-            <title>management</title>
+            <title>graph</title>
             <link rel="stylesheet" href="{{secure_asset('/assets/css/app.css')}}">
         </head>
         <body>
-            <p>management</p>
+            <p>graph</p>
         </body>
     </html>
 </x-app-layout>

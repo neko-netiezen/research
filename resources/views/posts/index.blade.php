@@ -14,15 +14,15 @@
         </head>
         <body>
             <div class='color'>
-            <div class='inner'>
-                <h1 class='title'>ファイト　就活！</h1>
-            </div>
-            <div class='circle_parent'>
-                <a href='./group.blade.php'><p class='circle'></p></a>
-                <a href='./create.blade.php'><p class='circle'></p></a>
-                <a href='./me.blade.php'><p class='circle'></p></a>
-                <a href='./management.blade.php'><p class='circle'></p></a>
-            </div>
+                <div class='inner'>
+                    <h1 class='title'>ファイト　就活！</h1>
+                </div>
+                <div class='circle_parent'>
+                    <a href='./group'><p class='circle'></p></a>
+                    <a href='./you'><p class='circle'></p></a>
+                    <a href='./me'><p class='circle'></p></a>
+                    <a href='./graph'><p class='circle'></p></a>
+                </div>
             </div>
         </body>
     </html>

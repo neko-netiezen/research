@@ -21,6 +21,15 @@
                     <x-nav-link :href="route('group')" :active="request()->routeIs('group')">
                         {{ __('Group') }}
                     </x-nav-link>
+                    <x-nav-link :href="route('you')" :active="request()->routeIs('you')">
+                        {{ __('You') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('me')" :active="request()->routeIs('me')">
+                        {{ __('Me') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('graph')" :active="request()->routeIs('graph')">
+                        {{ __('Graph') }}
+                    </x-nav-link>
                 </div>
             </div>
 
