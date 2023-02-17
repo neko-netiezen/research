@@ -8,11 +8,6 @@
     position: relative;
 }
 
-.body {
-    background-color: #000000;
-    position: relative;
-}
-
 .circle_parent {
     text-align: center;
     margin-top: 400px;
@@ -26,6 +21,3 @@
     margin: 20px;
 }
 
-.color {
-    background-image: url("../resouces/views/posts/images/title.png");
-}

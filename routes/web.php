@@ -22,10 +22,13 @@ Route::get('/dashboard', function () {
 
 Route::controller(PostController::class)->middleware(['auth'])->group(function(){
     Route::get('/', 'index')->name('index');
-    Route::get('/post', 'group')->name('group');
-    Route::get('/', 'you')->name('you');
-    Route::get('/', 'management')->name('management');
-    Route::get('/', 'me')->name('me');
+    Route::get('/group', 'group')->name('group');
+    Route::get('/you', 'you')->name('you');
+    Route::get('/me', 'me')->name('me');
+    Route::get('/graph', 'graph')->name('graph');
+    Route::get('/posts/{post}', [PostController::class ,'show'])->name('show');
+    Route::get('/create', [PostController::class ,'create'])->name('create');
+    Route::post('/posts', [PostController::class ,'store'])->name('store');
     Route::get('/posts/delete-user-form')->name('delete-user-form');
     Route::put('/posts/{post}', 'update')->name('update');
     Route::delete('/posts/{post}', 'delete')->name('delete');
