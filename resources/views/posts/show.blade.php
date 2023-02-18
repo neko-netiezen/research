@@ -15,7 +15,7 @@
             <link rel="stylesheet" href="{{secure_asset('/assets/css/app.css')}}">
         </head>
         <body>
-            <h1 class='title'>
+            <h1 class='content_title'>
                 {{ $post->title }}
             </h1>
             <div class="content">

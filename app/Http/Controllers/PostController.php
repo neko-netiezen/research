@@ -15,7 +15,7 @@ class PostController extends Controller
     
     public function group(Post $post)
     {
-        return view('posts/group')->with(['posts' => $post->getPaginateByLimit(2)]);
+        return view('posts/group')->with(['posts' => $post->getPaginateByLimit(4)]);
     }
     
     public function you(Post $post)
@@ -62,5 +62,12 @@ class PostController extends Controller
 
         return redirect('/posts/' . $post->id);
     }
+    
+    public function delete(Post $post)
+    {
+        $post->delete();
+        return redirect('/');
+    }
+    
 }
 ?>
