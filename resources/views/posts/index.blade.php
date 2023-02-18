@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="index">
         <h2 class="font-semibold text-x1 text-gray-800 leading-tight">
-            {{ __('Index') }}
+            {{ __('HOME') }}
         </h2>
     </x-slot>
     

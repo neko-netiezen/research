@@ -16,19 +16,19 @@
                         {{ __('Dashboard') }}
                     </x-nav-link>
                     <x-nav-link :href="route('index')" :active="request()->routeIs('index')">
-                        {{ __('Index') }}
+                        {{ __('HOME') }}
                     </x-nav-link>
                     <x-nav-link :href="route('group')" :active="request()->routeIs('group')">
-                        {{ __('Group') }}
+                        {{ __('掲示板') }}
                     </x-nav-link>
                     <x-nav-link :href="route('you')" :active="request()->routeIs('you')">
-                        {{ __('You') }}
+                        {{ __('チャット') }}
                     </x-nav-link>
                     <x-nav-link :href="route('me')" :active="request()->routeIs('me')">
-                        {{ __('Me') }}
+                        {{ __('管理') }}
                     </x-nav-link>
                     <x-nav-link :href="route('graph')" :active="request()->routeIs('graph')">
-                        {{ __('Graph') }}
+                        {{ __('グラフ') }}
                     </x-nav-link>
                 </div>
             </div>

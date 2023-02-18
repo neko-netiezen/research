@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="graph">
         <h2 class="font-semibold text-x1 text-gray-800 leading-tight">
-            {{ __('graph') }}
+            {{ __('グラフ') }}
         </h2>
     </x-slot>
     
