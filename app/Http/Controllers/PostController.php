@@ -43,11 +43,11 @@ class PostController extends Controller
         return view('posts/create');
     }
     
-    public function store(Post $post, PostRequest $request) 
+    public function store(Post $post, Request $request) 
     {
         $input = $request['post'];
         $post->fill($input)->save();
-        return redirect('/posts/' . $post->id);
+        return redirect('/group');
     }
     
     public function edit(Post $post)
