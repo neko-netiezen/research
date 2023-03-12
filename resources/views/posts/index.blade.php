@@ -13,15 +13,12 @@
             <link rel="stylesheet" href="{{secure_asset('/assets/css/app.css')}}">
         </head>
         <body>
-            <div class='color'>
-                <div class='inner'>
-                    <h1 class='title'>ファイト　就活！</h1>
-                </div>
+            <div class='inner'>
+                <h1 class='title'>ファイト　就活！</h1>
                 <div class='circle_parent'>
-                    <a href='./group'><p class='circle'></p></a>
-                    <a href='./you'><p class='circle'></p></a>
-                    <a href='./me'><p class='circle'></p></a>
-                    <a href='./graph'><p class='circle'></p></a>
+                    <a href='./group'><p class='circle'><img src="{{ secure_asset('/assets/images/group.png')}}" class='image'></p></a>
+                    <a href='./you'><p class='circle'><img src="{{ secure_asset('/assets/images/chat.png')}}" class='image'></p></a>
+                    <a href='./me'><p class='circle'><img src="{{ secure_asset('/assets/images/book.png')}}" class='image'></p></a>
                 </div>
             </div>
         </body>

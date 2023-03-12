@@ -14,10 +14,9 @@
             @vite(['resources/css/app.css', 'resources/js/app.js'])
         </head>
         <body>
-            <div id='calendar'></div>
+            <a href='./calendar'>カレンダー</a>
+            <a href='/diary'>日記</a>
+            <a href='/memo'>メモ</a>
         </body>
-        <a href='/calendars/calendar.blade.php'>calendar</a>
-        <a href='./diary'>diary</a>
-        <a href='/memo'>memo</a>
     </html>
 </x-app-layout>

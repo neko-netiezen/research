@@ -1,10 +1,13 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
-use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\ChatController;
 use App\Http\Controllers\MemoController;
 use App\Http\Controllers\EventController;
+use Illuminate\Support\Facades\Route;
+
+
 
 /*
 |--------------------------------------------------------------------------
@@ -27,14 +30,17 @@ Route::controller(PostController::class)->middleware(['auth'])->group(function()
     Route::get('/group', 'group')->name('group');
     Route::get('/you', 'you')->name('you');
     Route::get('/me', 'me')->name('me');
-    Route::get('/graph', 'graph')->name('graph');
     Route::get('/posts/{post}', [PostController::class ,'show'])->name('show');
     Route::get('/create', [PostController::class ,'create'])->name('create');
-    Route::post('/posts', 'store')->name('store');
+    Route::post('/group', 'store')->name('store');
     Route::get('/posts/delete-user-form')->name('delete-user-form');
     Route::put('/posts/{post}', 'update')->name('update');
     Route::delete('/posts/{post}', 'delete')->name('delete');
     Route::get('/posts/{post}/edit', 'edit')->name('edit');
+});
+
+Route::controller(ChatController::class)->middleware(['auth'])->group(function(){
+    Route::get('/you', 'you')->name('you');
 });
 
 Route::middleware('auth')->group(function () {
@@ -44,7 +50,7 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::get('/calendar', function () {
-    return view('posts/calendar');
+    return view('calendars/calendar');
 });
 
 Route::get('/diary', function () {

@@ -27,9 +27,6 @@
                     <x-nav-link :href="route('me')" :active="request()->routeIs('me')">
                         {{ __('管理') }}
                     </x-nav-link>
-                    <x-nav-link :href="route('graph')" :active="request()->routeIs('graph')">
-                        {{ __('グラフ') }}
-                    </x-nav-link>
                 </div>
             </div>
 

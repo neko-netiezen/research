@@ -9,7 +9,6 @@ class Event extends Model
 {
     use HasFactory;
     
-    // Controllerのfill用
     protected $fillable = [
         'event_title',
         'event_body',

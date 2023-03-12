@@ -13,7 +13,7 @@
         <title>FullCalendar</title>
         <!-- Fonts -->
         <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-        @vite(['resources/css/app.css', 'resources/js/app.js']) <!-- vite用の記述忘れずに -->
+        @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body>
         <!-- カレンダー表示 -->
@@ -78,65 +78,61 @@
     </body>
 </html>
     <style scoped>
-        .modal{
-            display: none; /* モーダル開くとflexに変更（ここの切り替えでモーダルの表示非表示をコントロール） */
-            justify-content: center;
-            align-items: center;
-            position: absolute;
-            z-index: 10; /* カレンダーの曜日表示がz-index=2のため、それ以上にする必要あり */
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            height: 100%;
-            width: 100%;
-            background-color: rgba(0,0,0,0.5);
-        }
-        /* モーダル */
-        .modal-contents{
-            background-color: white;
-            height: 400px;
-            width: 600px;
-            padding: 20px;
-        }
-        
-        /* 以下モーダル内要素のデザイン調整 */
-        input{
-            padding: 2px;
-            border: 1px solid black;
-            border-radius: 5px;
-        }
-        .input-title{
-            display: block;
-            width: 80%;
-            margin: 0 0 20px;
-        }
-        .input-date{
-            width: 27%;
-            margin: 0 5px 20px 0;
-        }
-        textarea{
-            display: block;
-            width: 80%;
-            margin: 0 0 20px;
-            padding: 2px;
-            border: 1px solid black;
-            border-radius: 5px;
-            resize: none;
-        }
-        select{
-            display: block;
-            width: 20%;
-            margin: 0 0 20px;
-            padding: 2px;
-            border: 1px solid black;
-            border-radius: 5px;
-        }
-        
-        /* 予定の上ではカーソルがポインターになる */
-        .fc-event-title-container{
-            cursor: pointer;
-        }           
+    /* モーダルのオーバーレイ */
+    .modal{
+        display: none; /* モーダル開くとflexに変更（ここの切り替えでモーダルの表示非表示をコントロール） */
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        z-index: 10; /* カレンダーの曜日表示がz-index=2のため、それ以上にする必要あり */
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0,0,0,0.5);
+    }
+    /* モーダル */
+    .modal-contents{
+        background-color: white;
+        height: 400px;
+        width: 600px;
+        padding: 20px;
+    }
+    
+    /* 以下モーダル内要素のデザイン調整 */
+    input{
+        padding: 2px;
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+    .input-title{
+        display: block;
+        width: 80%;
+        margin: 0 0 20px;
+    }
+    .input-date{
+        width: 27%;
+        margin: 0 5px 20px 0;
+    }
+    textarea{
+        display: block;
+        width: 80%;
+        margin: 0 0 20px;
+        padding: 2px;
+        border: 1px solid black;
+        border-radius: 5px;
+        resize: none;
+    }
+    select{
+        display: block;
+        width: 20%;
+        margin: 0 0 20px;
+        padding: 2px;
+        border: 1px solid black;
+        border-radius: 5px;
+    }
     </style>
  
 </x-app-layout>

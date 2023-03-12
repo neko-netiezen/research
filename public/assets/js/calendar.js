@@ -2,6 +2,8 @@ import axios from "axios";
 import { Calendar } from "@fullcalendar/core";
 import dayGridPlugin from "@fullcalendar/daygrid";
 import timeGridPlugin from '@fullcalendar/timegrid';
+import './bootstrap';
+import './calendar';
 
 // 日付を-1してYYYY-MM-DDの書式で返すメソッド
 function formatDate(date, pos) {
