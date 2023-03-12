@@ -15,7 +15,7 @@ class PostController extends Controller
     
     public function group(Post $post)
     {
-        return view('posts/group')->with(['posts' => $post->getPaginateByLimit(4)]);
+        return view('posts/group')->with(['posts' => $post->get()]);
     }
     
     public function you(Post $post)
@@ -26,11 +26,6 @@ class PostController extends Controller
     public function me(Post $post)
     {
         return view('posts/me')->with(['posts' => $post->get()]);
-    }
-    
-    public function graph(Post $post)
-    {
-        return view('posts/graph')->with(['posts' => $post->get()]);
     }
     
     public function show(Post $post)
